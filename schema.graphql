@@ -5,15 +5,18 @@ type Query {
    student(id:ID!):Student
 }
 
+type College {
+   id:ID!
+   name:String
+   fullName:String
+   location:String
+   rating:Float
+}
+
 type Student {
    id:ID!
    firstName:String
    lastName:String
-   fullName:String 
-   collegeId:String
-}
-
-type College {
-  name:String
-  location:String
+   fullName:String
+   college:College
 }
