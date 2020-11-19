@@ -9,7 +9,7 @@ type Student {
    id:ID!
    firstName:String
    lastName:String
-   password:String
+   fullName:String 
    collegeId:String
 }
 
